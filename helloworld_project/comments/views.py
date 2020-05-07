@@ -4,4 +4,5 @@ from django.http import HttpResponse
 # Create your views here.
 
 def homePageView(request):
-    return HttpResponse('Commets');
+    return render(request, 'comments.html', {})
+    #return HttpResponse('Commets');
